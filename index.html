@@ -27,7 +27,12 @@ section{padding:100px 0;background:var(--navy)}section:nth-child(even){backgroun
 /* PRODUCTS SECTION (9 PRODUCTS) WITH CONTENT ONLY */
 .products-section{background:var(--navy)}.product-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:25px}.product-card{background:var(--navy3);border:1px solid var(--line);border-radius:10px;overflow:hidden;transition:.3s;box-shadow:var(--shadow);display:flex;flex-direction:column;justify-content:space-between}.product-card:hover{transform:translateY(-5px);border-color:var(--cyan)}.product-body{padding:22px}.product-card h3{font-size:18px;margin:0 0 8px;color:#fff}.product-card p{font-size:12px;line-height:1.6;color:var(--muted);margin-bottom:15px}.product-features{list-style:none;padding:0;margin:0 0 15px;font-size:11px;color:#cbd5e1}.product-features li{padding:3px 0;display:flex;align-items:center;gap:6px}.product-features li:before{content:"▪";color:var(--cyan)}.product-footer{padding:0 22px 22px}
 
-.services{background:var(--navy2)}.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.service-card{background:var(--navy3);border:1px solid var(--line);border-radius:9px;overflow:hidden;transition:.3s;box-shadow:var(--shadow)}.service-card:hover{transform:translateY(-7px);box-shadow:var(--shadow)}.service-body{padding:24px}.service-icon{width:43px;height:43px;border-radius:8px;background:#07182c;color:var(--cyan);display:grid;place-items:center;font-size:21px;margin-bottom:16px;border:1px solid var(--line)}.service-body h3{font-size:19px;margin:0 0 10px;color:#fff}.service-body p{font-size:13px;line-height:1.75;color:var(--muted);min-height:68px}.service-body a{font-size:12px;font-weight:800;color:var(--cyan);display:inline-block;margin-top:10px}.service-body a span{font-size:17px;margin-left:4px}
+.services{background:var(--navy2)}.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.service-card{background:var(--navy3);border:1px solid var(--line);border-radius:9px;overflow:hidden;transition:.3s;box-shadow:var(--shadow)}.service-card:hover{transform:translateY(-7px);box-shadow:var(--shadow)}.service-body{padding:24px}.service-icon{width:43px;height:43px;border-radius:8px;background:#07182c;color:var(--cyan);display:grid;place-items:center;font-size:21px;margin-bottom:16px;border:1px solid var(--line)}.service-body h3{font-size:19px;margin:0 0 10px;color:#fff}.service-body p{font-size:13px;line-height:1.75;color:var(--muted);min-height:68px}.service-body a{font-size:12px;font-weight:800;color:var(--cyan);display:inline-block;margin-top:16px}.service-body a span{font-size:17px;margin-left:4px}
+.service-features{list-style:none;padding:0;margin:15px 0 0;font-size:12px;color:#cbd5e1;line-height:1.55}
+.service-features li{position:relative;padding:6px 0 6px 17px;border-bottom:1px solid rgba(146,166,187,.10)}
+.service-features li:last-child{border-bottom:0}
+.service-features li:before{content:"✓";position:absolute;left:0;top:6px;color:var(--cyan);font-weight:800}
+.service-body p{min-height:0;margin-bottom:12px}
 
 .why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.why-card{padding:25px 20px;border:1px solid var(--line);border-radius:8px;background:var(--navy3)}.why-card .num{font:800 12px Manrope;color:var(--cyan);letter-spacing:.1em}.why-card h3{font-size:17px;margin:17px 0 9px;color:#fff}.why-card p{font-size:13px;line-height:1.75;color:var(--muted);margin:0}
 
@@ -237,12 +242,68 @@ JB3Cs <small></small>
 <section class="services" id="services"><div class="container">
 <div class="section-head center"><div class="eyebrow">What we do</div><h2>Our Complete IT Solutions & Services<br></h2><p>Flexible consulting and implementation services to support your technology lifecycle.</p></div>
 <div class="service-grid">
-<article class="service-card"><div class="service-body"><div class="service-icon">⌁</div><h3>Cybersecurity & Data Privacy</h3><p>Security assessments, vulnerability testing, security governance, and privacy support.</p><a href="#contact">Discuss this service <span>→</span></a></div></article>
-<article class="service-card"><div class="service-body"><div class="service-icon">▤</div><h3>Network & IT Infrastructure</h3><p>Network design, server deployment, firewall and VPN configuration, and upgrades.</p><a href="#contact">Discuss this service <span>→</span></a></div></article>
-<article class="service-card"><div class="service-body"><div class="service-icon">◫</div><h3>Database & Systems Administration</h3><p>Database deployment, performance tuning, replication, backup strategy, and recovery.</p><a href="#contact">Discuss this service <span>→</span></a></div></article>
-<article class="service-card"><div class="service-body"><div class="service-icon">⌘</div><h3>Software Development</h3><p>Business web applications, custom systems, API integration, and workflow automation.</p><a href="#contact">Discuss this service <span>→</span></a></div></article>
-<article class="service-card"><div class="service-body"><div class="service-icon">◇</div><h3>IT Consulting & Systems Integration</h3><p>Technology roadmaps, solution architecture, technical assessments, and delivery.</p><a href="#contact">Discuss this service <span>→</span></a></div></article>
-<article class="service-card"><div class="service-body"><div class="service-icon">◎</div><h3>Managed IT Services</h3><p>Remote and on-site support, preventive maintenance, monitoring, and assistance.</p><a href="#contact">Discuss this service <span>→</span></a></div></article>
+<article class="service-card"><div class="service-body"><div class="service-icon">⌁</div><h3>Cybersecurity & Data Privacy</h3><p>Practical security solutions to protect business systems, networks, and sensitive information.</p><ul class="service-features">
+<li>Vulnerability Assessment and Security Testing</li>
+<li>Web Application Security Assessment</li>
+<li>Security Audits and Risk Assessment</li>
+<li>Data Privacy Compliance Support</li>
+<li>Security Policies and Governance</li>
+<li>Security Awareness and Best Practices</li>
+<li>Incident Response and Security Recommendations</li>
+</ul><a href="#contact" onclick="document.getElementById('service').value='Cybersecurity & Data Privacy'">Discuss this service <span>→</span></a></div></article>
+
+<article class="service-card"><div class="service-body"><div class="service-icon">▤</div><h3>Network & IT Infrastructure</h3><p>Reliable network and infrastructure solutions designed for performance, availability, and secure connectivity.</p><ul class="service-features">
+<li>Network Design, Installation, and Configuration</li>
+<li>LAN, WAN, and Wi-Fi Infrastructure</li>
+<li>Server Deployment and Administration</li>
+<li>Firewall Configuration and Management</li>
+<li>VPN and Secure Remote Access</li>
+<li>Network Troubleshooting and Optimization</li>
+<li>Infrastructure Upgrades and Maintenance</li>
+</ul><a href="#contact" onclick="document.getElementById('service').value='Network & IT Infrastructure'">Discuss this service <span>→</span></a></div></article>
+
+<article class="service-card"><div class="service-body"><div class="service-icon">◫</div><h3>Database & Systems Administration</h3><p>Professional database management to maintain data integrity, system performance, availability, and reliability.</p><ul class="service-features">
+<li>Database Installation and Deployment</li>
+<li>Database Administration and Maintenance</li>
+<li>Performance Monitoring and Optimization</li>
+<li>Database Replication and Synchronization</li>
+<li>Backup and Recovery Planning</li>
+<li>Database Security and Access Management</li>
+<li>Server and Application Administration</li>
+</ul><a href="#contact" onclick="document.getElementById('service').value='Database & Systems Administration'">Discuss this service <span>→</span></a></div></article>
+
+<article class="service-card"><div class="service-body"><div class="service-icon">⌘</div><h3>Software Development</h3><p>Customized software solutions that simplify operations, improve productivity, and support business growth.</p><ul class="service-features">
+<li>Custom Business Management Systems</li>
+<li>Web-Based Application Development</li>
+<li>Accounting and Financial Management Systems</li>
+<li>Inventory, Warehousing, and Sales Systems</li>
+<li>Accounts Receivable and Billing Solutions</li>
+<li>API Development and System Integration</li>
+<li>Workflow Automation and Process Improvement</li>
+<li>Application Enhancement and Maintenance</li>
+</ul><a href="#contact" onclick="document.getElementById('service').value='Software Development'">Discuss this service <span>→</span></a></div></article>
+
+<article class="service-card"><div class="service-body"><div class="service-icon">◇</div><h3>IT Consulting & Systems Integration</h3><p>Technology guidance and integration services that help organizations make informed IT decisions and modernize their operations.</p><ul class="service-features">
+<li>IT Strategy and Technology Planning</li>
+<li>IT Infrastructure Assessment</li>
+<li>Systems Analysis and Requirements Assessment</li>
+<li>Solution Architecture and Technical Design</li>
+<li>Software and Hardware Recommendations</li>
+<li>Business Process and Workflow Improvement</li>
+<li>Technology Implementation and Integration</li>
+<li>IT Project Planning and Technical Advisory</li>
+</ul><a href="#contact" onclick="document.getElementById('service').value='IT Consulting & Systems Integration'">Discuss this service <span>→</span></a></div></article>
+
+<article class="service-card"><div class="service-body"><div class="service-icon">◎</div><h3>Managed IT Services</h3><p>Ongoing technical support and proactive IT management to keep business operations running smoothly.</p><ul class="service-features">
+<li>Remote and On-Site Technical Support</li>
+<li>Preventive Maintenance and System Health Checks</li>
+<li>Network and Server Monitoring</li>
+<li>Computer and Workstation Troubleshooting</li>
+<li>Software Installation and Configuration</li>
+<li>IT Equipment and Asset Management</li>
+<li>System Updates and Maintenance</li>
+<li>Technical Assistance and User Support</li>
+</ul><a href="#contact" onclick="document.getElementById('service').value='Managed IT Services'">Discuss this service <span>→</span></a></div></article>
 </div></div></section>
 
 <section id="why"><div class="container"><div class="section-head"><div class="eyebrow">The JB3Cs approach</div><h2>More than a service provider.<br>A partner in progress.</h2><p>Good technology delivery is about understanding the environment and managing risk.</p></div>
