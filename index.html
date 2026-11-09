@@ -55,7 +55,7 @@ section{padding:100px 0;background:var(--navy)}section:nth-child(even){backgroun
 
 .cta-band{padding:0 0 95px;background:var(--navy)}.cta-panel{padding:48px 55px;border-radius:12px;background:linear-gradient(110deg,#1264cf,#0b9ab7);color:#fff;display:flex;align-items:center;justify-content:space-between;gap:30px;overflow:hidden;position:relative}.cta-panel:after{content:"J";position:absolute;right:24%;top:-100px;font:800 320px Manrope;color:#ffffff0d}.cta-panel h2{font-size:clamp(27px,3.5vw,40px);margin:0 0 10px;max-width:620px;color:#fff}.cta-panel p{margin:0;color:#e0f2ff;font-size:14px;line-height:1.7}.cta-panel .btn{background:#fff;color:#0a4e9c;box-shadow:none;white-space:nowrap;z-index:1}
 
-.contact{background:var(--navy2)}.contact-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:55px}.contact-info h2{font-size:40px;line-height:1.15;margin:15px 0;color:#fff}.contact-info>p{color:var(--muted);line-height:1.8;font-size:14px}.contact-item{display:flex;gap:13px;margin-top:23px;align-items:flex-start}.contact-item .ci{width:40px;height:40px;display:grid;place-items:center;background:var(--navy3);color:var(--cyan);border-radius:8px;border:1px solid var(--line)}.contact-item b{font-size:13px;display:block;margin:2px 0 5px;color:#fff}.contact-item span{font-size:12px;color:var(--muted);line-height:1.6}.contact-form{background:var(--navy3);padding:32px;border-radius:10px;box-shadow:var(--shadow);border:1px solid var(--line)}.contact-form h3{font-size:22px;margin:0 0 7px;color:#fff}.contact-form>p{font-size:12px;color:var(--muted);margin:0 0 23px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}.field{display:flex;flex-direction:column;gap:7px;margin-bottom:15px}.field.full{grid-column:1/-1}.field label{font-size:11px;font-weight:800;color:#cbd5e1}.field input,.field textarea,.field select{border:1px solid var(--line);border-radius:6px;padding:12px;color:#fff;outline:none;background:var(--navy2);font-size:13px}.field input:focus,.field textarea:focus,.field select:focus{border-color:var(--cyan);box-shadow:0 0 0 3px rgba(39,196,216,.2)}.field textarea{min-height:110px;resize:vertical}.form-note{font-size:11px;color:var(--muted);line-height:1.6;margin-top:12px}
+.contact{background:var(--navy2)}.contact-grid{display:grid;grid-template-columns:1fr;gap:0}.contact-info{max-width:760px}.contact-info h2{font-size:40px;line-height:1.15;margin:15px 0;color:#fff}.contact-info>p{color:var(--muted);line-height:1.8;font-size:14px}.contact-item{display:flex;gap:13px;margin-top:23px;align-items:flex-start}.contact-item .ci{width:40px;height:40px;display:grid;place-items:center;background:var(--navy3);color:var(--cyan);border-radius:8px;border:1px solid var(--line)}.contact-item b{font-size:13px;display:block;margin:2px 0 5px;color:#fff}.contact-item span{font-size:12px;color:var(--muted);line-height:1.6}
 
 footer{background:#020912;color:#b7c7d8;padding:55px 0 22px;border-top:1px solid var(--line)}.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:45px;padding-bottom:38px}.footer-about p{max-width:370px;font-size:13px;line-height:1.8;color:#92a6bb}.footer-title{color:#fff;font:700 13px Manrope;margin-bottom:18px}.footer-links{display:grid;gap:12px;font-size:12px}.footer-links a:hover{color:#54d9e7}.copyright{border-top:1px solid var(--line);padding-top:20px;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;font-size:11px;color:#7e93a9}.backtop{position:fixed;right:20px;bottom:20px;width:42px;height:42px;border:0;border-radius:50%;background:var(--blue);color:#fff;font-size:19px;box-shadow:var(--shadow);cursor:pointer;z-index:20;opacity:0;pointer-events:none;transition:.2s}.backtop.show{opacity:1;pointer-events:auto}
 
@@ -364,20 +364,7 @@ Food & Beverage</div></article>
 <div class="contact-item"><div class="ci">⌖</div><div><b>Location & Coverage</b><span>Pojo Bugasong Antique, Philippines · On-site and remote engagements</span></div></div>
 <div class="contact-item"><div class="ci">◷</div><div><b>Business inquiries</b><span>Project consultations · Software inquiries · IT support contracts</span></div></div>
 </div>
-<form class="contact-form" id="contactForm">
-<h3>Request a consultation</h3>
-<p>Share your details. Makakarating ito direkta sa aming email.</p>
-<div class="form-grid">
-<div class="field"><label for="name">FULL NAME *</label><input id="name" name="name" required placeholder="Your name"></div>
-<div class="field"><label for="company">COMPANY</label><input id="company" name="company" placeholder="Company name"></div>
-<div class="field"><label for="email">SENDER EMAIL (Your Email) *</label><input id="email" name="email" type="email" required placeholder="yourname@gmail.com"></div>
-<div class="field"><label for="phone">PHONE NUMBER</label><input id="phone" name="phone" placeholder="+63"></div>
-<div class="field full"><label for="service">SERVICE / PRODUCT INTEREST</label><select id="service" name="service"><option>Accounts Receivable System</option><option>Accounting System</option><option>Inventory System</option><option>Warehousing System</option><option>Sales Management System</option><option>Android Water &amp; Electric Read-and-Bill System</option><option>Cybersecurity & Data Privacy</option><option>Network & IT Infrastructure</option><option>Database & Systems Administration</option><option>Software Development</option><option>IT Consulting & Systems Integration</option><option>Managed IT Services</option><option>Other / Not sure yet</option></select></div>
-<div class="field full"><label for="message">PROJECT DETAILS *</label><textarea id="message" name="message" required placeholder="Briefly describe your requirements, goals, or challenges..."></textarea></div>
-</div>
-<button class="btn" type="submit">Send Inquiry to Email&nbsp; ↗</button>
-<div class="form-note">I-click ito para direktang magbukas ang iyong email app na nakatutok sa JB3Cs IT Consulting.</div>
-</form>
+
 </div></section>
 </main>
 
@@ -444,25 +431,6 @@ navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>navLink
 const backtop=document.getElementById('backtop');window.addEventListener('scroll',()=>backtop.classList.toggle('show',window.scrollY>500));backtop.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
 document.getElementById('year').textContent=new Date().getFullYear();
 
-// Universal Email Sender Handler (JB3Cs IT Consulting)
-const COMPANY_TARGET_EMAIL = 'jb3cs.itconsulting@gmail.com';
-
-document.getElementById('contactForm').addEventListener('submit', e => {
-  e.preventDefault();
-  const d = new FormData(e.target);
-  const clientEmail = d.get('email');
-  const subject = encodeURIComponent('JB3Cs Inquiry: ' + d.get('service') + ' from ' + d.get('name'));
-  const body = encodeURIComponent(
-    'Pangalan: ' + d.get('name') + '\n' +
-    'Kumpanya: ' + d.get('company') + '\n' +
-    'Email ng Kliyente: ' + clientEmail + '\n' +
-    'Telepono: ' + d.get('phone') + '\n' +
-    'Serbisyo/Produkto: ' + d.get('service') + '\n\n' +
-    'Mga Detalye:\n' + d.get('message')
-  );
-  
-  window.location.href = `mailto:${COMPANY_TARGET_EMAIL}?subject=${subject}&body=${body}`;
-});
 </script>
 </body>
 </html>
