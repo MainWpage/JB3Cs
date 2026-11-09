@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#041120">
+<meta name="description" content="JB3Cs IT Consulting in Pojo Bugasong Antique delivers cybersecurity, data infrastructure, software development, and custom software products.">
+<title>JB3Cs | Pojo Bugasong Antique</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#041120;--navy2:#07182c;--navy3:#0c2541;--blue:#1769e0;--cyan:#27c4d8;--ink:#f3f7fc;--muted:#92a6bb;--pale:#07182c;--white:#ffffff;--line:#1a3352;--shadow:0 18px 55px rgba(0,0,0,.35)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:"DM Sans",sans-serif;color:var(--ink);background:var(--navy)}h1,h2,h3,h4{font-family:Manrope,sans-serif;letter-spacing:-.035em;color:#fff}a{text-decoration:none;color:inherit}button,input,textarea,select{font:inherit}.container{width:min(1160px,calc(100% - 44px));margin:auto}.topbar{background:#020912;color:#c7d5e5;font-size:12px;padding:9px 0;border-bottom:1px solid var(--line)}.topbar .container{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}.topbar strong{color:#fff}.nav-wrap{position:sticky;top:0;z-index:50;background:rgba(4,17,32,.96);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}nav{height:78px;display:flex;align-items:center;justify-content:space-between;color:#fff}.brand{display:flex;flex-direction:column;font-family:Manrope;font-weight:800;letter-spacing:-.04em;font-size:18px;color:#fff}.brand small{color:var(--cyan);font:600 10px "DM Sans";letter-spacing:.12em;margin-top:2px}.navlinks{display:flex;align-items:center;gap:26px;font-size:13px;color:#c5d4e5}.navlinks a:hover{color:#54d9e7}.nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border:0;border-radius:7px;padding:13px 19px;background:linear-gradient(110deg,var(--blue),#168bdc);color:#fff;font-weight:700;font-size:13px;box-shadow:0 8px 24px rgba(23,105,224,.22);transition:.25s;cursor:pointer}.nav-cta:hover,.btn:hover{transform:translateY(-2px);filter:brightness(1.08)}.menu-btn{display:none;background:none;border:1px solid #496078;color:#fff;border-radius:7px;padding:9px 12px}
+
+.hero{position:relative;min-height:660px;background:var(--navy);overflow:hidden;color:#fff}.slides{position:absolute;inset:0}.slide{position:absolute;inset:0;opacity:0;transition:opacity 1s ease;background-size:cover;background-position:center;transform:scale(1.025)}.slide.active{opacity:1;animation:zoom 8s linear forwards}@keyframes zoom{to{transform:scale(1.09)}}.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(4,16,31,.98) 0%,rgba(5,23,43,.92) 46%,rgba(5,23,43,.65) 100%),linear-gradient(0deg,rgba(4,16,31,.6),transparent 55%);z-index:1}.hero-content{position:relative;z-index:2;min-height:660px;display:flex;align-items:center;padding:85px 0 105px}.hero-copy{max-width:700px}.eyebrow{display:inline-flex;align-items:center;gap:9px;color:#63dce8;font-size:11px;font-weight:800;letter-spacing:.2em;text-transform:uppercase}.eyebrow:before{content:"";width:25px;height:2px;background:var(--cyan)}h1{font-size:clamp(38px,5.5vw,68px);line-height:1.04;margin:22px 0 20px;max-width:760px;color:#fff}.hero h1 span{color:#55d6e5}.hero-copy>p{font-size:17px;line-height:1.8;color:#d0dceb;max-width:610px;margin:0 0 30px}.hero-actions{display:flex;gap:13px;flex-wrap:wrap}.btn-outline{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.35);box-shadow:none}.hero-note{margin-top:50px;display:flex;align-items:center;gap:15px;color:#c1d0df;font-size:12px}.hero-note b{color:#fff}.hero-controls{position:absolute;z-index:3;bottom:35px;left:50%;transform:translateX(-50%);display:flex;align-items:center;gap:10px}.dot{width:8px;height:8px;border:0;border-radius:50%;background:#8296ac;padding:0;cursor:pointer}.dot.active{width:27px;border-radius:8px;background:#4ed2e1}.slide-arrows{position:absolute;right:max(22px,calc((100% - 1160px)/2));bottom:25px;z-index:3;display:flex;gap:8px}.slide-arrows button{width:38px;height:38px;border-radius:50%;border:1px solid #8296ac;background:#0a213a99;color:#fff;cursor:pointer;font-size:20px}
+
+.trust-strip{background:#07182c;border-bottom:1px solid var(--line);border-top:1px solid var(--line);padding:24px 0}.trust-inner{display:flex;align-items:center;justify-content:space-between;gap:25px;flex-wrap:wrap}.trust-label{font-size:11px;font-weight:800;letter-spacing:.12em;color:#718198;text-transform:uppercase;max-width:180px;line-height:1.6}.industry-tags{display:flex;gap:10px;flex-wrap:wrap}.industry-tags span{padding:10px 14px;border:1px solid var(--line);border-radius:5px;color:#cbd5e1;font-size:12px;font-weight:700;background:#0c2541}
+
+section{padding:100px 0;background:var(--navy)}section:nth-child(even){background:var(--navy2)}.section-head{max-width:690px;margin-bottom:48px}.section-head.center{text-align:center;margin:0 auto 48px}.section-head.center .eyebrow{justify-content:center}.section-head h2{font-size:clamp(31px,4vw,46px);line-height:1.15;margin:16px 0;color:#fff}.section-head p{color:var(--muted);line-height:1.8;margin:0;font-size:15px}
+
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}.about-visual{position:relative;min-height:470px}.about-visual img{width:88%;height:430px;object-fit:cover;border-radius:10px;box-shadow:var(--shadow)}.about-card{position:absolute;right:0;bottom:5px;background:var(--navy3);color:#fff;padding:27px;border-radius:8px;width:240px;box-shadow:var(--shadow);border:1px solid var(--line)}.about-card strong{font:800 24px Manrope;color:#53d4e3;display:block}.about-card span{font-size:12px;line-height:1.6;color:#d4e0ed}.about-copy h2{font-size:42px;line-height:1.15;margin:15px 0;color:#fff}.about-copy p{color:var(--muted);line-height:1.85;font-size:15px}.check-list{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:25px 0 30px}.check{display:flex;gap:10px;font-size:13px;font-weight:700;color:#cbd5e1}.check i{font-style:normal;color:#27c4d8;font-size:17px}
+
+/* TEAM SECTION: 2 MEMBERS CENTERED WITH BULLET EXPERTISE */
+.team-section{background:var(--navy2);padding:100px 0}.team-grid{display:flex;justify-content:center;gap:30px;flex-wrap:wrap}.team-card{background:var(--navy3);border:1px solid var(--line);border-radius:12px;overflow:hidden;text-align:left;padding:35px 30px;width:420px;box-shadow:var(--shadow);transition:.3s}.team-card:hover{transform:translateY(-7px);border-color:var(--cyan)}.team-head{display:flex;align-items:center;gap:20px;margin-bottom:20px}.team-avatar{width:90px;height:90px;border-radius:50%;object-fit:cover;border:3px solid var(--cyan);flex-shrink:0}.team-card h3{font-size:20px;margin:0 0 4px;color:#fff}.team-pos{font-size:12px;color:var(--cyan);font-weight:700;text-transform:uppercase;letter-spacing:.08em}.team-bio{font-size:13px;color:var(--muted);line-height:1.6;margin-bottom:18px}.expertise-title{font-size:12px;font-weight:800;color:#fff;text-transform:uppercase;letter-spacing:.05em;margin-bottom:8px}.expertise-list{list-style:none;padding:0;margin:0 0 22px;font-size:12px;color:#cbd5e1}.expertise-list li{padding:4px 0;display:flex;align-items:center;gap:8px}.expertise-list li:before{content:"✓";color:var(--cyan);font-weight:bold}.linkedin-btn{display:inline-flex;align-items:center;gap:6px;background:#0077b5;color:#fff;padding:8px 16px;border-radius:6px;font-size:12px;font-weight:700;transition:.2s}.linkedin-btn:hover{background:#005e93}
+
+/* PRODUCTS SECTION (9 PRODUCTS) WITH CONTENT ONLY */
+.products-section{background:var(--navy)}.product-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:25px}.product-card{background:var(--navy3);border:1px solid var(--line);border-radius:10px;overflow:hidden;transition:.3s;box-shadow:var(--shadow);display:flex;flex-direction:column;justify-content:space-between}.product-card:hover{transform:translateY(-5px);border-color:var(--cyan)}.product-body{padding:22px}.product-card h3{font-size:18px;margin:0 0 8px;color:#fff}.product-card p{font-size:12px;line-height:1.6;color:var(--muted);margin-bottom:15px}.product-features{list-style:none;padding:0;margin:0 0 15px;font-size:11px;color:#cbd5e1}.product-features li{padding:3px 0;display:flex;align-items:center;gap:6px}.product-features li:before{content:"▪";color:var(--cyan)}.product-footer{padding:0 22px 22px}
+
+.services{background:var(--navy2)}.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.service-card{background:var(--navy3);border:1px solid var(--line);border-radius:9px;overflow:hidden;transition:.3s;box-shadow:var(--shadow)}.service-card:hover{transform:translateY(-7px);box-shadow:var(--shadow)}.service-body{padding:24px}.service-icon{width:43px;height:43px;border-radius:8px;background:#07182c;color:var(--cyan);display:grid;place-items:center;font-size:21px;margin-bottom:16px;border:1px solid var(--line)}.service-body h3{font-size:19px;margin:0 0 10px;color:#fff}.service-body p{font-size:13px;line-height:1.75;color:var(--muted);min-height:68px}.service-body a{font-size:12px;font-weight:800;color:var(--cyan);display:inline-block;margin-top:10px}.service-body a span{font-size:17px;margin-left:4px}
+
+.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.why-card{padding:25px 20px;border:1px solid var(--line);border-radius:8px;background:var(--navy3)}.why-card .num{font:800 12px Manrope;color:var(--cyan);letter-spacing:.1em}.why-card h3{font-size:17px;margin:17px 0 9px;color:#fff}.why-card p{font-size:13px;line-height:1.75;color:var(--muted);margin:0}
+
+.solutions{background:linear-gradient(120deg,#07182c,#0b2c4b);color:#fff}.solutions .section-head p{color:#b9c9da}.solution-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.solution{display:flex;gap:14px;align-items:flex-start;padding:20px;border:1px solid rgba(255,255,255,.13);background:rgba(255,255,255,.045);border-radius:7px}.solution .symbol{font-size:22px;color:#55d6e5}.solution h3{font-size:15px;margin:0 0 6px;color:#fff}.solution p{font-size:12px;line-height:1.6;color:#b9c9da;margin:0}
+
+.process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}.process{border-top:2px solid var(--cyan);padding-top:22px;position:relative}.process b{font:800 13px Manrope;color:var(--cyan)}.process h3{font-size:18px;margin:12px 0 8px;color:#fff}.process p{font-size:13px;line-height:1.7;color:var(--muted);margin:0}
+
+.cta-band{padding:0 0 95px;background:var(--navy)}.cta-panel{padding:48px 55px;border-radius:12px;background:linear-gradient(110deg,#1264cf,#0b9ab7);color:#fff;display:flex;align-items:center;justify-content:space-between;gap:30px;overflow:hidden;position:relative}.cta-panel:after{content:"J";position:absolute;right:24%;top:-100px;font:800 320px Manrope;color:#ffffff0d}.cta-panel h2{font-size:clamp(27px,3.5vw,40px);margin:0 0 10px;max-width:620px;color:#fff}.cta-panel p{margin:0;color:#e0f2ff;font-size:14px;line-height:1.7}.cta-panel .btn{background:#fff;color:#0a4e9c;box-shadow:none;white-space:nowrap;z-index:1}
+
+.contact{background:var(--navy2)}.contact-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:55px}.contact-info h2{font-size:40px;line-height:1.15;margin:15px 0;color:#fff}.contact-info>p{color:var(--muted);line-height:1.8;font-size:14px}.contact-item{display:flex;gap:13px;margin-top:23px;align-items:flex-start}.contact-item .ci{width:40px;height:40px;display:grid;place-items:center;background:var(--navy3);color:var(--cyan);border-radius:8px;border:1px solid var(--line)}.contact-item b{font-size:13px;display:block;margin:2px 0 5px;color:#fff}.contact-item span{font-size:12px;color:var(--muted);line-height:1.6}.contact-form{background:var(--navy3);padding:32px;border-radius:10px;box-shadow:var(--shadow);border:1px solid var(--line)}.contact-form h3{font-size:22px;margin:0 0 7px;color:#fff}.contact-form>p{font-size:12px;color:var(--muted);margin:0 0 23px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}.field{display:flex;flex-direction:column;gap:7px;margin-bottom:15px}.field.full{grid-column:1/-1}.field label{font-size:11px;font-weight:800;color:#cbd5e1}.field input,.field textarea,.field select{border:1px solid var(--line);border-radius:6px;padding:12px;color:#fff;outline:none;background:var(--navy2);font-size:13px}.field input:focus,.field textarea:focus,.field select:focus{border-color:var(--cyan);box-shadow:0 0 0 3px rgba(39,196,216,.2)}.field textarea{min-height:110px;resize:vertical}.form-note{font-size:11px;color:var(--muted);line-height:1.6;margin-top:12px}
+
+footer{background:#020912;color:#b7c7d8;padding:55px 0 22px;border-top:1px solid var(--line)}.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:45px;padding-bottom:38px}.footer-about p{max-width:370px;font-size:13px;line-height:1.8;color:#92a6bb}.footer-title{color:#fff;font:700 13px Manrope;margin-bottom:18px}.footer-links{display:grid;gap:12px;font-size:12px}.footer-links a:hover{color:#54d9e7}.copyright{border-top:1px solid var(--line);padding-top:20px;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;font-size:11px;color:#7e93a9}.backtop{position:fixed;right:20px;bottom:20px;width:42px;height:42px;border:0;border-radius:50%;background:var(--blue);color:#fff;font-size:19px;box-shadow:var(--shadow);cursor:pointer;z-index:20;opacity:0;pointer-events:none;transition:.2s}.backtop.show{opacity:1;pointer-events:auto}
+
+@media(max-width:900px){.navlinks{gap:14px}.navlinks a{font-size:12px}.service-grid,.product-grid{grid-template-columns:repeat(2,1fr)}.why-grid{grid-template-columns:repeat(2,1fr)}.about-grid{gap:35px}.solution-grid{grid-template-columns:repeat(2,1fr)}.team-grid{flex-direction:column;align-items:center}}
+@media(max-width:700px){.container{width:min(100% - 32px,560px)}.topbar .container{justify-content:center;text-align:center}.topbar .container span:last-child{display:none}nav{height:68px}.menu-btn{display:block}.navlinks{display:none;position:absolute;top:68px;left:0;right:0;background:var(--navy);padding:20px 24px 25px;flex-direction:column;align-items:stretch;border-top:1px solid var(--line)}.navlinks.open{display:flex}.navlinks a{padding:7px 0;font-size:14px}.nav-cta{display:none}.hero,.hero-content{min-height:620px}.hero-content{padding:70px 0 100px}.hero-copy>p{font-size:15px}.hero-note{margin-top:35px}.slide-arrows{display:none}section{padding:72px 0}.about-grid,.contact-grid{grid-template-columns:1fr;gap:38px}.about-visual{min-height:360px}.about-visual img{height:340px;width:92%}.about-card{width:190px;padding:20px}.about-copy h2,.contact-info h2{font-size:34px}.service-grid,.solution-grid,.product-grid{grid-template-columns:1fr}.why-grid{grid-template-columns:1fr 1fr}.process-grid{grid-template-columns:1fr 1fr;row-gap:30px}.cta-panel{padding:35px 27px;align-items:flex-start;flex-direction:column}.footer-grid{grid-template-columns:1fr 1fr;gap:30px}.footer-about{grid-column:1/-1}.trust-inner{justify-content:center}.trust-label{text-align:center;max-width:none}.industry-tags{justify-content:center}}
+</style>
+</head>
+<body>
+
+<!-- AUDIO BACKGROUND MUSIC (Autoplay pagbukas ng page) -->
+<audio id="bgMusic" autoplay loop>
+  <source src="https://actions.google.com/sounds/v1/ambiences/office_ambience.ogg" type="audio/ogg">
+  Your browser does not support the audio element.
+</audio>
+
+<div class="topbar"><div class="container"><span><strong></strong> &nbsp;&nbsp;</span><span>IT Consulting • Custom Software • Infrastructure</span></div></div>
+<div class="nav-wrap"><nav class="container">
+<a class="brand" href="#home" aria-label="JB3Cs IT Consulting home">
+JB3Cs <small></small>
+</a>
+<button class="menu-btn" id="menuBtn" aria-label="Open navigation">☰</button>
+<div class="navlinks" id="navLinks"><a href="#about">About</a><a href="#team">Our Team</a><a href="#products">Products</a><a href="#services">Services</a><a href="#solutions">Solutions</a><a href="#contact">Contact</a></div>
+<a class="nav-cta" href="#contact">Discuss a Project <span>↗</span></a>
+</nav></div>
+
+<main>
+<section class="hero" id="home">
+<div class="slides" aria-hidden="true">
+<div class="slide active" style="background-image:url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=2000&q=85')"></div>
+<div class="slide" style="background-image:url('https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=2000&q=85')"></div>
+<div class="slide" style="background-image:url('https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=2000&q=85')"></div>
+</div>
+<div class="container hero-content"><div class="hero-copy">
+<div class="eyebrow">Welcome to Our Official Website</div>
+<h1>JB3Cs IT Consulting</h1>
+<p>Practical IT consulting and customized software solutions from JB3Cs IT Consulting in Pojo Bugasong Antique, helping organizations strengthen security and modernize operations.</p>
+<div class="hero-actions"><a class="btn" href="#services">Explore Our Services <span>→</span></a><a class="btn btn-outline" href="#contact">Talk to a Consultant</a></div>
+<div class="hero-note"><span>◆</span><span><b>Local expertise, global standards.</b><br>Serving Bugasong, Antique, and nationwide clients.</span></div>
+</div></div>
+<div class="hero-controls" id="heroDots"><button class="dot active" aria-label="Slide 1"></button><button class="dot" aria-label="Slide 2"></button><button class="dot" aria-label="Slide 3"></button></div>
+<div class="slide-arrows"><button id="prevSlide" aria-label="Previous slide">‹</button><button id="nextSlide" aria-label="Next slide">›</button></div>
+</section>
+
+<div class="trust-strip"><div class="container trust-inner"><div class="trust-label">Technology for<br>every industry</div><div class="industry-tags"><span>Enterprise & Corporate</span><span>Retail & Distribution</span><span>Manufacturing & Industrial</span><span>Energy & Utilities</span><span>Government & Public Sector (LGUs, NGAs, GOCCs)</span><span>Small & Medium Enterprises (SMEs)</span></span><span>Transportation & Logistics</span></span><span>NGOs & Nonprofit Organizations</span><span>Education & Academic Institutions</span></div></div></div>
+
+<section id="about"><div class="container about-grid">
+<div class="about-visual"><img loading="lazy" src="mbcb.jpg" alt="JB3Cs IT Consulting team workspace"><div class="about-card"><strong>JB3Cs IT Consulting</strong><span>Pioneering digital solutions from Pojo Bugasong Antique.</span></div></div>
+<div class="about-copy"><div class="eyebrow">Who we are</div><h2>Technology expertise aligned with your business.</h2><p>JB3Cs IT Consulting, located in Pojo Bugasong Antique, helps organizations plan, secure, integrate, and improve their technology environments. We bring together technical thinking and business-focused delivery to turn IT challenges into practical solutions.</p><p>From custom software products to full system implementations, our approach emphasizes clear scope, responsible execution, and long-term value.</p>
+<div class="check-list"><div class="check"><i>✓</i> Business-first approach</div><div class="check"><i>✓</i> Security-minded delivery</div><div class="check"><i>✓</i> Customized Software</div><div class="check"><i>✓</i> Scalable solutions</div></div><a class="btn" href="#contact">Let’s Work Together →</a></div>
+</div></section>
+
+<!-- LEADERSHIP TEAM: 2 MEMBERS CENTERED WITH BULLET EXPERTISE -->
+<section class="team-section" id="team">
+<div class="container">
+<div class="section-head center">
+<div class="eyebrow">The Leadership Team</div>
+<h2>Meet the experts behind JB3Cs.</h2>
+<p>Led by experienced technology professionals with a proven track record supporting major corporations in the Philippines, delivering reliable, high-quality IT services and innovative technology solutions.</p>
+</div>
+<div class="team-grid">
+<!-- Team Member 1 -->
+<div class="team-card">
+<div class="team-head">
+<img class="team-avatar" src="barte.jpg" alt="">
+<div>
+<h3>Christie C. Barte</h3>
+<div class="team-pos">IT Project & Systems Consultant</div>
+</div>
+</div>
+<p class="team-bio">Helping organizations streamline business processes, develop effective software solutions, and deliver successful IT projects through strategic systems analysis and technology planning.</p>
+<div class="expertise-title">Areas of Expertise:</div>
+<ul class="expertise-list">
+<li>IT Project Management</li>
+<li>Software Development</li>
+<li>Systems Analysis & Design</li>
+<li>System Architecture</li>
+<li>Business Process Analysis</li>
+</ul>
+<a class="linkedin-btn" href="#" target="_blank" rel="noopener">Personal Website ↗</a>
+</div>
+
+<!-- Team Member 2 -->
+<div class="team-card">
+<div class="team-head">
+<img class="team-avatar" src="marlon.jpg" alt="">
+<div>
+<h3>Marlon M. Bariuad</h3>
+<div class="team-pos">Cybersecurity & Data Privacy Consultant</div>
+</div>
+</div>
+<p class="team-bio">Helping organizations strengthen security, manage cyber risks, protect sensitive information, and maintain compliance through effective cybersecurity and information security practices.</p>
+<div class="expertise-title">Areas of Expertise:</div>
+<ul class="expertise-list">
+<li>Certified in cybersecurity and data privacy</li>
+<li>Category-3 Expert DICT Cybersecurity Bureau</li>
+<li>DPO & Core Member NPC IT Sector Group</li>
+<li>IT Infrastructure, Cloud & Server Deployment</li>
+<li>Database Administration & Optimization</li>
+</ul>
+<a class="linkedin-btn" href="https://mainwpage.github.io/Mbariuad/" target="_blank" rel="noopener">Personal Website ↗</a>
+</div>
+</div>
+</div>
+</section>
+
+<!-- SOFTWARE PRODUCTS SECTION: SIX BUSINESS SYSTEMS (NO IMAGES) -->
+<section class="products-section" id="products">
+<div class="container">
+<div class="section-head center">
+<div class="eyebrow">Our Software Solutions</div>
+<h2>Business Management Systems</h2>
+<p>Purpose-built systems that help organizations manage finance, inventory, warehouse operations, sales, and utility billing with greater visibility and control.</p>
+</div>
+<div class="product-grid">
+<div class="product-card">
+<div class="product-body">
+  <h3>1. Accounts Receivable System</h3>
+  <p>Streamline customer accounts, invoice tracking, collections, and outstanding balances with a clear receivables dashboard.</p>
+  <ul class="product-features">
+    <li>Customer account ledger</li>
+    <li>Invoice and payment monitoring</li>
+    <li>Aging and collection reports</li>
+  </ul>
+</div>
+<div class="product-footer"><a class="btn" href="#contact" style="width:100%;" onclick="document.getElementById('service').value='Accounts Receivable System'">Inquire Product ↗</a></div>
+</div>
+
+<div class="product-card">
+<div class="product-body">
+  <h3>2. Accounting System</h3>
+  <p>Manage day-to-day financial transactions and produce organized, reliable accounting records and reports.</p>
+  <ul class="product-features">
+    <li>General ledger and journal entries</li>
+    <li>Income and expense monitoring</li>
+    <li>Financial statements and reports</li>
+  </ul>
+</div>
+<div class="product-footer"><a class="btn" href="#contact" style="width:100%;" onclick="document.getElementById('service').value='Accounting System'">Inquire Product ↗</a></div>
+</div>
+
+<div class="product-card">
+<div class="product-body">
+  <h3>3. Inventory System</h3>
+  <p>Maintain accurate stock visibility across products, locations, and transactions to support better purchasing decisions.</p>
+  <ul class="product-features">
+    <li>Stock-in and stock-out tracking</li>
+    <li>Reorder and low-stock alerts</li>
+    <li>Product and inventory reports</li>
+  </ul>
+</div>
+<div class="product-footer"><a class="btn" href="#contact" style="width:100%;" onclick="document.getElementById('service').value='Inventory System'">Inquire Product ↗</a></div>
+</div>
+
+<div class="product-card">
+<div class="product-body">
+  <h3>4. Warehousing System</h3>
+  <p>Coordinate warehouse operations, item locations, receiving, picking, and dispatch through one organized platform.</p>
+  <ul class="product-features">
+    <li>Warehouse and bin location tracking</li>
+    <li>Receiving, picking, and dispatch</li>
+    <li>Stock movement visibility</li>
+  </ul>
+</div>
+<div class="product-footer"><a class="btn" href="#contact" style="width:100%;" onclick="document.getElementById('service').value='Warehousing System'">Inquire Product ↗</a></div>
+</div>
+
+<div class="product-card">
+<div class="product-body">
+  <h3>5. Sales Management System</h3>
+  <p>Manage customer opportunities, sales activities, orders, and performance from lead to completed transaction.</p>
+  <ul class="product-features">
+    <li>Customer and sales pipeline</li>
+    <li>Quotation and order monitoring</li>
+    <li>Sales performance analytics</li>
+  </ul>
+</div>
+<div class="product-footer"><a class="btn" href="#contact" style="width:100%;" onclick="document.getElementById('service').value='Sales Management System'">Inquire Product ↗</a></div>
+</div>
+
+<div class="product-card">
+<div class="product-body">
+  <h3>6. Android Water &amp; Electric Read-and-Bill System</h3>
+  <p>Equip field personnel with an Android application for utility meter reading, consumer records, and billing workflows.</p>
+  <ul class="product-features">
+    <li>Android-based field meter reading</li>
+    <li>Water and electric consumption records</li>
+    <li>Billing and collection support</li>
+  </ul>
+</div>
+<div class="product-footer"><a class="btn" href="#contact" style="width:100%;" onclick="document.getElementById('service').value='Android Water &amp; Electric Read-and-Bill System'">Inquire Product ↗</a></div>
+</div>
+</div></div></section>
+
+<!-- END-TO-END IT SERVICES (NO IMAGES) -->
+<section class="services" id="services"><div class="container">
+<div class="section-head center"><div class="eyebrow">What we do</div><h2>Our Complete IT Solutions & Services<br></h2><p>Flexible consulting and implementation services to support your technology lifecycle.</p></div>
+<div class="service-grid">
+<article class="service-card"><div class="service-body"><div class="service-icon">⌁</div><h3>Cybersecurity & Data Privacy</h3><p>Security assessments, vulnerability testing, security governance, and privacy support.</p><a href="#contact">Discuss this service <span>→</span></a></div></article>
+<article class="service-card"><div class="service-body"><div class="service-icon">▤</div><h3>Network & IT Infrastructure</h3><p>Network design, server deployment, firewall and VPN configuration, and upgrades.</p><a href="#contact">Discuss this service <span>→</span></a></div></article>
+<article class="service-card"><div class="service-body"><div class="service-icon">◫</div><h3>Database & Systems Administration</h3><p>Database deployment, performance tuning, replication, backup strategy, and recovery.</p><a href="#contact">Discuss this service <span>→</span></a></div></article>
+<article class="service-card"><div class="service-body"><div class="service-icon">⌘</div><h3>Software Development</h3><p>Business web applications, custom systems, API integration, and workflow automation.</p><a href="#contact">Discuss this service <span>→</span></a></div></article>
+<article class="service-card"><div class="service-body"><div class="service-icon">◇</div><h3>IT Consulting & Systems Integration</h3><p>Technology roadmaps, solution architecture, technical assessments, and delivery.</p><a href="#contact">Discuss this service <span>→</span></a></div></article>
+<article class="service-card"><div class="service-body"><div class="service-icon">◎</div><h3>Managed IT Services</h3><p>Remote and on-site support, preventive maintenance, monitoring, and assistance.</p><a href="#contact">Discuss this service <span>→</span></a></div></article>
+</div></div></section>
+
+<section id="why"><div class="container"><div class="section-head"><div class="eyebrow">The JB3Cs approach</div><h2>More than a service provider.<br>A partner in progress.</h2><p>Good technology delivery is about understanding the environment and managing risk.</p></div>
+<div class="why-grid"><div class="why-card"><div class="num">01 / UNDERSTAND</div><h3>Listen before recommending</h3><p>We start with your business objectives, current environment, and constraints.</p></div><div class="why-card"><div class="num">02 / DESIGN</div><h3>Plan with purpose</h3><p>Recommendations are shaped around fit, security, and practical value.</p></div><div class="why-card"><div class="num">03 / DELIVER</div><h3>Execute with clarity</h3><p>Defined scope, milestones, communication, and documentation keep work on track.</p></div><div class="why-card"><div class="num">04 / IMPROVE</div><h3>Support what comes next</h3><p>We help identify next steps so your technology evolves with your organization.</p></div></div></div></section>
+
+<section class="solutions" id="solutions"><div class="container"><div class="section-head"><div class="eyebrow">Solutions & capabilities</div><h2>Specialized skills.<br>Practical business outcomes.</h2><p>Bring the right expertise together for your next IT initiative.</p></div></section>
+
+<section id="process"><div class="container"><div class="section-head center"><div class="eyebrow">How we work</div><h2>A clear path from challenge to solution.</h2><p>A structured engagement keeps expectations aligned and makes progress visible.</p></div>
+<div class="process-grid"><div class="process"><b>STEP 01</b><h3>Discover</h3><p>We discuss your goals, challenges, environment, and desired outcomes.</p></div><div class="process"><b>STEP 02</b><h3>Propose</h3><p>We define the scope, approach, deliverables, timeline, and investment.</p></div><div class="process"><b>STEP 03</b><h3>Implement</h3><p>We execute agreed activities and communicate progress throughout.</p></div><div class="process"><b>STEP 04</b><h3>Handover & Support</h3><p>We document the work, hand over deliverables, and discuss next steps.</p></div></div></div></section>
+
+<div class="cta-band"><div class="container"><div class="cta-panel"><div><h2>Have an IT challenge? Let’s make a plan.</h2><p>Tell us what you are trying to improve. We’ll help you identify a practical next step.</p></div><a class="btn" href="#contact">Start a Conversation&nbsp; ↗</a></div></div></div>
+
+<section class="contact" id="contact"><div class="container contact-grid"><div class="contact-info"><div class="eyebrow">Get in touch</div><h2>Let’s talk about your next project.</h2><p>Whether you need a custom software product, technology assessment, or IT support, contact us today.</p>
+<div class="contact-item"><div class="ci">✉</div><div><b>Email</b><span id="displayEmail">jb3cs.itconsulting@gmail.com</span></div></div>
+<div class="contact-item"><div class="ci">⌖</div><div><b>Location & Coverage</b><span>Pojo Bugasong Antique, Philippines · On-site and remote engagements</span></div></div>
+<div class="contact-item"><div class="ci">◷</div><div><b>Business inquiries</b><span>Project consultations · Software inquiries · IT support contracts</span></div></div>
+</div>
+<form class="contact-form" id="contactForm">
+<h3>Request a consultation</h3>
+<p>Share your details. Makakarating ito direkta sa aming email.</p>
+<div class="form-grid">
+<div class="field"><label for="name">FULL NAME *</label><input id="name" name="name" required placeholder="Your name"></div>
+<div class="field"><label for="company">COMPANY</label><input id="company" name="company" placeholder="Company name"></div>
+<div class="field"><label for="email">SENDER EMAIL (Your Email) *</label><input id="email" name="email" type="email" required placeholder="yourname@gmail.com"></div>
+<div class="field"><label for="phone">PHONE NUMBER</label><input id="phone" name="phone" placeholder="+63"></div>
+<div class="field full"><label for="service">SERVICE / PRODUCT INTEREST</label><select id="service" name="service"><option>Accounts Receivable System</option><option>Accounting System</option><option>Inventory System</option><option>Warehousing System</option><option>Sales Management System</option><option>Android Water &amp; Electric Read-and-Bill System</option><option>Cybersecurity & Data Privacy</option><option>Network & IT Infrastructure</option><option>Database & Systems Administration</option><option>Software Development</option><option>IT Consulting & Systems Integration</option><option>Managed IT Services</option><option>Other / Not sure yet</option></select></div>
+<div class="field full"><label for="message">PROJECT DETAILS *</label><textarea id="message" name="message" required placeholder="Briefly describe your requirements, goals, or challenges..."></textarea></div>
+</div>
+<button class="btn" type="submit">Send Inquiry to Email&nbsp; ↗</button>
+<div class="form-note">I-click ito para direktang magbukas ang iyong email app na nakatutok sa JB3Cs IT Consulting.</div>
+</form>
+</div></section>
+</main>
+
+<footer><div class="container"><div class="footer-grid"><div class="footer-about"><a class="brand" href="#home" style="font-size:16px;">JB3Cs IT CONSULTING <small style="display:block; color:var(--cyan); font-size:10px;">POJO BUGASONG ANTIQUE</small></a><p>Technology consulting and customized software products based in Pojo Bugasong Antique, helping organizations build secure and dependable technology environments.</p></div><div><div class="footer-title">EXPLORE</div><div class="footer-links"><a href="#about">About JB3Cs</a><a href="#team">Our Team</a><a href="#products">Software Products</a><a href="#services">Our Services</a><a href="#solutions">Solutions</a></div></div><div><div class="footer-title">CONNECT</div><div class="footer-links"><a href="#contact">Request a Consultation</a><a href="#contact">Project Inquiries</a><a href="#contact">Managed IT Services</a></div></div></div><div class="copyright"><span>© <span id="year"></span> JB3Cs IT Consulting (Pojo Bugasong Antique). All rights reserved.</span><span>Technology. Security. Confidence.</span></div></div></footer>
+<button class="backtop" id="backtop" aria-label="Back to top">↑</button>
+
+<script>
+// Hero Slider
+const slides=[...document.querySelectorAll('.slide')],dots=[...document.querySelectorAll('.dot')];let current=0,timer;
+function showSlide(n){current=(n+slides.length)%slides.length;slides.forEach((s,i)=>s.classList.toggle('active',i===current));dots.forEach((d,i)=>d.classList.toggle('active',i===current));}
+function restart(){clearInterval(timer);timer=setInterval(()=>showSlide(current+1),5500)}
+dots.forEach((d,i)=>d.addEventListener('click',()=>{showSlide(i);restart()}));
+document.getElementById('nextSlide').addEventListener('click',()=>{showSlide(current+1);restart()});
+document.getElementById('prevSlide').addEventListener('click',()=>{showSlide(current-1);restart()});restart();
+
+// Mobile Navigation
+const menuBtn=document.getElementById('menuBtn'),navLinks=document.getElementById('navLinks');
+menuBtn.addEventListener('click',()=>navLinks.classList.toggle('open'));
+navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>navLinks.classList.remove('open')));
+
+// Back to top button & Year
+const backtop=document.getElementById('backtop');window.addEventListener('scroll',()=>backtop.classList.toggle('show',window.scrollY>500));backtop.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+document.getElementById('year').textContent=new Date().getFullYear();
+
+// Universal Email Sender Handler (JB3Cs IT Consulting)
+const COMPANY_TARGET_EMAIL = 'jb3cs.itconsulting@gmail.com';
+
+document.getElementById('contactForm').addEventListener('submit', e => {
+  e.preventDefault();
+  const d = new FormData(e.target);
+  const clientEmail = d.get('email');
+  const subject = encodeURIComponent('JB3Cs Inquiry: ' + d.get('service') + ' from ' + d.get('name'));
+  const body = encodeURIComponent(
+    'Pangalan: ' + d.get('name') + '\n' +
+    'Kumpanya: ' + d.get('company') + '\n' +
+    'Email ng Kliyente: ' + clientEmail + '\n' +
+    'Telepono: ' + d.get('phone') + '\n' +
+    'Serbisyo/Produkto: ' + d.get('service') + '\n\n' +
+    'Mga Detalye:\n' + d.get('message')
+  );
+  
+  window.location.href = `mailto:${COMPANY_TARGET_EMAIL}?subject=${subject}&body=${body}`;
+});
+</script>
+</body>
+</html>
