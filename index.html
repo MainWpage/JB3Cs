@@ -299,7 +299,7 @@ const musicToggle = document.getElementById('musicToggle');
 const musicLabel = document.getElementById('musicLabel');
 
 function updateMusicControl() {
-  const playing = !bgMusic.paused;
+  const playing = !bgMusic.play;
   musicToggle.classList.toggle('is-playing', playing);
   musicToggle.setAttribute('aria-pressed', String(playing));
   musicToggle.setAttribute('aria-label', playing ? 'Pause background music' : 'Play background music');
